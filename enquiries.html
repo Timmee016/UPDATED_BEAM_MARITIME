@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enquiries – Beam Maritime</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Your Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .logo-container img {
+      height: 100px;
+      width: auto;
+    }
+
+    .fade-in-up {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-in-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .enquiry-form-section {
+      padding: 2rem;
+      background: #f8f9fa;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .contact-form label {
+      font-weight: 500;
+      margin-top: 1rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .btn-pulse {
+      margin-top: 1.5rem;
+      padding: 10px 20px;
+      background-color: #004e92;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-pulse:hover {
+      background-color: #0072ff;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar Section -->
+ <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand logo-container" href="#">
+        <img src="BEAM_MARITIME_Logo.svg" alt="Beam Maritime Logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Our Company</a></li>
+
+          <!-- Dropdown for Services -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Our Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item" href="portagency.html">Port Agency</a></li>
+              <li><a class="dropdown-item" href="cargodocumentation.html">Cargo Documentation</a></li>
+              <li><a class="dropdown-item" href="protectiveagency.html">Protective Agency</a></li>
+              <li><a class="dropdown-item" href="projectcargo.html">Project Cargo</a></li>
+              <li><a class="dropdown-item" href="procurement.html">Procurement</a></li>
+              <li><a class="dropdown-item" href="warehousing.html">Warehousing</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="enquiries.html">Make Enquiries</a></li>
+          <li class="nav-item"><a class="nav-link" href="miniblog.html">Blog</a></li>
+           <li class="nav-item"><a class="nav-link" href="guidlines.html">Guidelines</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Enquiry Form -->
+  <section class="enquiry-form-section fade-in-up">
+    <h1 class="text-center mb-4">Make an Enquiry</h1>
+    <form class="contact-form" aria-label="Enquiry form">
+      <label for="fullName">Full Name</label>
+      <input id="fullName" type="text" placeholder="Enter your name" required />
+
+      <label for="email">Email Address</label>
+      <input id="email" type="email" placeholder="Enter your email" required />
+
+      <label for="company">Company Name</label>
+      <input id="company" type="text" placeholder="Company name" required />
+
+      <label for="phone">Phone Number</label>
+      <input id="phone" type="tel" placeholder="Phone number" required />
+
+      <label for="message">Your Enquiry</label>
+      <textarea id="message" placeholder="What would you like to know?" rows="5" required></textarea>
+
+      <button type="submit" class="btn-pulse">Submit Enquiry</button>
+    </form>
+  </section>
+<!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Beam Maritime. All rights reserved.</p>
+  </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelector('.fade-in-up').classList.add('visible');
+    });
+  </script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
+
