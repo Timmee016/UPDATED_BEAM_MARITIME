@@ -79,10 +79,9 @@ beam-maritime/
 
 ## 🛠️ Future Improvements
 
-- Add navbar/footer partials to unify layout.
+- Added navbar/footer partials to unify layout.
 - Enable dynamic blog system.
-- Implement form backend.
-- Integrate animations for smoother UX.
+- Implemented form backend.
 
 ---
 
