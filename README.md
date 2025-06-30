@@ -47,15 +47,13 @@ Contains a small collection of styled blog entries relevant to maritime logistic
 ## 💡 Usage Instructions
 
 - All pages are standalone HTML files.
-- Images should be placed in a folder like `images/` and referenced accordingly (e.g., `images/BEAM maritime.jpg`).
-- You can link all pages together with a shared navigation bar or homepage.
 
 To preview locally:
 1. Download all `.html` files.
 2. Open in any modern browser (Chrome, Firefox, etc.).
 
 To make forms functional:
-- Connect to a backend (PHP, Node.js) or form service provider (e.g. Formspree, Netlify Forms).
+- Connected formspree.
 
 ---
 
@@ -63,15 +61,15 @@ To make forms functional:
 
 ```bash
 beam-maritime/
-├── images/
-│   └── BEAM maritime.jpg
-├── port-agency.html
-├── cargo-documentation.html
-├── protective-agency.html
-├── project-cargo.html
+├──index.html
+├── about.html
+├── portagency.html
+├── cargodocumentation.html
+├── protectiveagency.html
+├── projectcargo.html
 ├── procurement.html
 ├── warehousing.html
-├── guidelines-getting-started.html
+├── guidelines-getting-started.html(not needede anymore)
 ├── quotation.html
 ├── mini-blog.html
 └── README.md
